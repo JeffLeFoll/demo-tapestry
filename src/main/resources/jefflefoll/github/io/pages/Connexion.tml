@@ -1,0 +1,40 @@
+<html t:type="layout"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div class="row">
+    <h2 id="content">Connexion au système</h2>
+    <p>Pour profiter de toutes les fonctionnalités offertes par notre site veuillez vous connecter.
+        Une fois connectés vous aurez accès à de nouvelles section comme notre catalogue.
+        Bonne navigation sur notre site.</p>
+</div>
+
+<hr class="major" />
+
+<form method="post" action="#">
+    <div class="row uniform 25%">
+        <div class="-3u 4u$">
+            <input type="text" name="name" id="login" value="" placeholder="Login" />
+        </div>
+
+        <div class="-3u 4u$">
+            <input type="email" name="email" id="email" value="" placeholder="Email" />
+        </div>
+
+        <div class="-3u 9u$">
+            <ul class="actions">
+                <li><input type="submit" value="&#xf084;    Connexion"/></li>
+            </ul>
+        </div>
+    </div>
+</form>
+
+<hr class="major" />
+
+<div class="row">
+    <p>Vos données seront traitées, analysées, torturées afin de mieux vous connaître pour mieux vous servir... <br/>
+        et aussi parce qu'on veux que vous dépensiez vos brouzoufs!
+    </p>
+</div>
+
+</html>

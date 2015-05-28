@@ -1,42 +1,34 @@
-<html t:type="layout" title="demo-tapestry Index"
-      t:sidebarTitle="Framework Version"
+<html t:type="layout"
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
       xmlns:p="tapestry:parameter">
-        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
 
-    <p>${message:greeting}</p>
+    <div class="row">
+        <h2 id="content">Une Démo d'Apache Tapestry ?</h2>
+        <p>Il existe beaucoup de framework web pour Java comme Struts ou GWT. <a href="http://tapestry.apache.org/index.html" target="_blank">Tapestry</a> est un framework orienté composant écrit en java pure. Basé sur les concepts de "convention au lieu de configuration", il est entièrement testable et support les pratiques comme TDD.
+            Cette démo à pour but de montrer comment en partant d'une maquette HTML CSS/HTML5 réactive nous obtenons un site web utilisant tout le potentiel de Java tout en gardant le même rendu et le même source HTML que la maquette.</p>
+    </div>
 
-    <p>The current time is: <strong>${currentTime}</strong></p>
-
-    <!-- A Zone is a component that can be updated in place, triggered by other components. -->
-    <t:zone t:id="zone">
-        <p>
-            You have clicked the link <strong>${clickCount}</strong> times.
-        </p>
-
-        <p>
-            [
-            <t:actionlink t:id="increment">increment</t:actionlink>
-            ]
-            &nbsp;
-            [
-            <t:actionlink t:id="incrementAjax" zone="^">increment (via Ajax)</t:actionlink>
-            ]
-        </p>
-
-    </t:zone>
-
-    <p:sidebar>
-        <p>
-            You are running Tapestry version <strong>${tapestryVersion}</strong>.
-        </p>
-
-
-        <p>
-            [
-            <t:pagelink page="Index">refresh page</t:pagelink>
-            ]
-        </p>
-    </p:sidebar>
+    <div class="tuiles">
+        <div class="row uniform 25%">
+            <div class="0 6u contact">
+                <span><t:pagelink page="contact"><br/> Contact <br/><i class="fa fa-envelope-o fa-3x"></i> </t:pagelink></span>
+            </div>
+            <div class="-6 6u$ catalogue">
+                <span><t:pagelink page="catalogue"><br/> Catalogue <br/><i class="fa fa-shopping-cart fa-3x"></i> </t:pagelink></span>
+            </div>
+            <div class="0 6u moncompte">
+                <span><t:pagelink page="moncompte"><br/> Mon compte <br/><i class="fa fa-user fa-3x"></i> </t:pagelink></span>
+            </div>
+            <div class="-6 3u authentification">
+                <span><t:pagelink page="déconnexion"><br/> Déconnexion <br/><i class="fa fa-sign-out fa-3x"></i> </t:pagelink></span>
+            </div>
+            <div class="-9 3u$ apropos">
+                <span><t:pagelink page="apropos"><br/> A propos <br/><i class="fa fa-question-circle fa-3x"></i> </t:pagelink></span>
+            </div>
+            <div class="-6 3u authentification">
+                <span><t:pagelink page="connexion"><br/> Connexion <br/><i class="fa fa-sign-in fa-3x"></i> </t:pagelink></span>
+            </div>
+        </div>
+    </div>
 
 </html>
