@@ -8,3 +8,8 @@ build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
+
+
+# Fichiers Idea
+*.iml
+.idea

@@ -9,8 +9,6 @@ targetCompatibility = 1.8
 group = 'jefflefoll.github.io'
 version = '1.0-SNAPSHOT'
 
-compileJava.options.encoding = 'UTF-8'
-
 repositories {
     mavenCentral()
 	
@@ -36,6 +34,10 @@ dependencies {
     }
 	
     //provided 'javax.servlet:servlet-api:2.5'
+}
+
+tasks.withType(JavaCompile) { 
+	options.encoding = "UTF-8" 
 }
 
 task wrapper(type: Wrapper) {
