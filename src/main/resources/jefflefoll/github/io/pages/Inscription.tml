@@ -1,0 +1,57 @@
+<html t:type="layout"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div class="page-header">
+    <h1>Venez nous rejoindre</h1>
+</div>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="saisieNom" class="col-sm-2 control-label">Nom</label>
+
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="saisieNom" placeholder="Nom" required="true" autofocus="true"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="saisiePrénom" class="col-sm-2 control-label">Prénom</label>
+
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="saisiePrénom" placeholder="Prénom" required="true"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="saisieVille" class="col-sm-2 control-label">Ville</label>
+
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="saisieVille" placeholder="Ville" required="true"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="saisieMail" class="col-sm-2 control-label">Email</label>
+
+        <div class="col-sm-6">
+            <input type="email" class="form-control" id="saisieMail" placeholder="email" required="true"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="saisieMdP" class="col-sm-2 control-label">Mot de passe</label>
+
+        <div class="col-sm-6">
+            <input type="password" class="form-control" id="saisieMdP" placeholder="Mot de passe" required="true"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-danger">Créer votre compte</button>
+        </div>
+    </div>
+</form>
+
+</html>

@@ -2,37 +2,46 @@
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
       xmlns:p="tapestry:parameter">
 
-    <h2 id="content">Catalogue de brique-à-braque</h2>
-    <p>Ensemble des produits (peut-être) disponibles sur le site. <br/>
-        Le prix est en devise locale.</p>
-    <div class="row">
-        <table>
-            <tr>
-                <th>Désignation</th>
-                <th>Prix</th>
-                <th>Ajouter au panier</th>
-            </tr>
-            <tr>
-                <td>Sabre laser</td>
-                <td>405 Credits</td>
-                <td><a href="#" class="button icon fa-cart-plus">Ajouter</a></td>
-            </tr>
-            <tr>
-                <td>Tondeuse à gazon</td>
-                <td>250 €</td>
-                <td><a href="#" class="button icon fa-cart-plus">Ajouter</a></td>
-            </tr>
-            <tr>
-                <td>Pack de 6 bouteilles de Nuke-Cola</td>
-                <td>4.5 Caps</td>
-                <td><a href="#" class="button icon fa-cart-plus">Ajouter</a></td>
-            </tr>
-            <tr>
-                <td>Pied de biche</td>
-                <td>0</td>
-                <td><a href="#" class="button icon fa-cart-plus">Ajouter</a></td>
-            </tr>
-        </table>
-    </div>
+
+<h2 id="content">Catalogue de brique-à-braque</h2>
+
+<p><h4>Ensemble des produits (peut-être) disponibles sur le site.<br/>
+    Le prix est en devise locale. </h4></p>
+
+<table class="table table-hover">
+    <tr>
+        <th>Désignation</th>
+        <th>Prix</th>
+        <th>Ajouter au panier</th>
+    </tr>
+    <tr>
+        <td>Sabre laser</td>
+        <td>405 Crédits Impérial</td>
+        <td><a class="btn btn-default btn-sm" href="#"><i class="fa fa-cart-plus"></i> Ajouter</a></td>
+    </tr>
+    <tr>
+        <td>Tondeuse à gazon</td>
+        <td>250 €</td>
+        <td><a class="btn btn-default btn-sm" href="#"><i class="fa fa-cart-plus"></i> Ajouter</a></td>
+    </tr>
+    <tr>
+        <td>Nuke-Cola x6</td>
+        <td>5 Caps</td>
+        <td><a class="btn btn-default btn-sm" href="#"><i class="fa fa-cart-plus"></i> Ajouter</a></td>
+    </tr>
+    <tr>
+        <td>Pied de biche</td>
+        <td>0</td>
+        <td><a class="btn btn-default btn-sm" href="#"><i class="fa fa-cart-plus"></i> Ajouter</a></td>
+    </tr>
+</table>
+
+<p>Il y a X éléments dans votre panier, pour un total de XX €, XX Caps, XX Crédits Impérial.</p>
+
+<div>
+    <button type="submit" class="btn btn-primary">Commander</button>
+    <button type="reset" class="btn btn-warning">Annuler</button>
+</div>
+
 
 </html>

@@ -2,33 +2,62 @@
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
       xmlns:p="tapestry:parameter">
 
-    <div class="row">
-        <h2 id="content">Une Démo d'Apache Tapestry ?</h2>
-        <p>Il existe beaucoup de framework web pour Java comme Struts ou GWT. <a href="http://tapestry.apache.org/index.html" target="_blank">Tapestry</a> est un framework orienté composant écrit en java pure. Basé sur les concepts de "convention au lieu de configuration", il est entièrement testable et support les pratiques comme TDD.
-            Cette démo à pour but de montrer comment en partant d'une maquette HTML CSS/HTML5 réactive nous obtenons un site web utilisant tout le potentiel de Java tout en gardant le même rendu et le même source HTML que la maquette.</p>
-    </div>
+<div class="page-header">
+    <h1>Une Démo d'Apache Tapestry ?</h1>
+</div>
+<p class="lead">Il existe beaucoup de framework web pour Java comme Struts ou GWT. Tapestry est un framework orienté
+    composant écrit en java pure. Basé sur les concepts de "convention au lieu de configuration", il est entièrement
+    testable et support les pratiques comme TDD. Cette démo à pour but de montrer comment en partant d'une maquette
+    <a href="http://getbootstrap.com/" target="_blank">Boostrap</a> CSS/HTML5 réactive nous obtenons un site web
+    utilisant tout le potentiel de Java tout en gardant le même rendu et le même source HTML que la maquette.</p>
 
-    <div class="tuiles">
-        <div class="row uniform 25%">
-            <div class="0 6u contact">
-                <span><t:pagelink page="contact"><br/> Contact <br/><i class="fa fa-envelope-o fa-3x"></i> </t:pagelink></span>
-            </div>
-            <div class="-6 6u$ catalogue">
-                <span><t:pagelink page="catalogue"><br/> Catalogue <br/><i class="fa fa-shopping-cart fa-3x"></i> </t:pagelink></span>
-            </div>
-            <div class="0 6u moncompte">
-                <span><t:pagelink page="moncompte"><br/> Mon compte <br/><i class="fa fa-user fa-3x"></i> </t:pagelink></span>
-            </div>
-            <div class="-6 3u authentification">
-                <span><t:pagelink page="déconnexion"><br/> Déconnexion <br/><i class="fa fa-sign-out fa-3x"></i> </t:pagelink></span>
-            </div>
-            <div class="-9 3u$ apropos">
-                <span><t:pagelink page="apropos"><br/> A propos <br/><i class="fa fa-question-circle fa-3x"></i> </t:pagelink></span>
-            </div>
-            <div class="-6 3u authentification">
-                <span><t:pagelink page="connexion"><br/> Connexion <br/><i class="fa fa-sign-in fa-3x"></i> </t:pagelink></span>
-            </div>
+
+<div class="row">
+
+    <div class="col-sm-6">
+        <div class="contenu moncompte">
+            <t:pagelink page="moncompte">Mon compte <br/><i class="fa fa-user fa-3x"></i> </t:pagelink>
         </div>
     </div>
+
+    <div class="col-sm-6">
+        <div class="contenu catalogue">
+            <t:pagelink page="catalogue">Catalogue <br/><i class="fa fa-shopping-cart fa-3x"></i> </t:pagelink>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-sm-6">
+        <div class="contenu contact">
+            <t:pagelink page="contact">Contact <br/><i class="fa fa-envelope-o fa-3x"></i> </t:pagelink>
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="contenu apropos">
+            <t:pagelink page="apropos">A propos <br/><i class="fa fa-question-circle fa-3x"></i> </t:pagelink>
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="contenu authentification">
+            <t:pagelink page="déconnexion">Déconnexion <br/><i class="fa fa-sign-out fa-3x"></i> </t:pagelink>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-sm-3">
+        <div class="contenu authentification">
+            <t:pagelink page="connexion">Connexion <br/><i class="fa fa-sign-in fa-3x"></i> </t:pagelink>
+        </div>
+    </div>
+
+</div>
 
 </html>
