@@ -5,13 +5,13 @@
 
 <div class="row">
     <div class="col-sm-11 col-sm-offset-1">
-        <h1 class="page-header">Dashboard</h1>
+        <h1 class="page-header">${message:MonCompte}</h1>
 
         <div class="row">
             <div class="col-sm-3">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Mes informations</h3>
+                        <h3 class="panel-title">${message:mesInfos}</h3>
                     </div>
                     <div class="panel-body">
                         <b>Nom :</b> Deckard
@@ -26,7 +26,7 @@
             <div class="col-sm-5">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Répartition des commandes</h3>
+                        <h3 class="panel-title">${message:infosRepartition}</h3>
                     </div>
                     <div class="panel-body">
                         <div id="chart"></div>

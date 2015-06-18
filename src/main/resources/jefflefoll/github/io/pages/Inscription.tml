@@ -3,53 +3,53 @@
       xmlns:p="tapestry:parameter">
 
 <div class="page-header">
-    <h1>Venez nous rejoindre</h1>
+    <h1>${mesage:titreInscription}</h1>
 </div>
 
 <form class="form-horizontal">
     <div class="form-group">
-        <label for="saisieNom" class="col-sm-2 control-label">Nom</label>
+        <label for="saisieNom" class="col-sm-2 control-label">${message:nom}</label>
 
         <div class="col-sm-6">
-            <input type="text" class="form-control" id="saisieNom" placeholder="Nom" required="true" autofocus="true"/>
+            <input type="text" class="form-control" id="saisieNom" placeholder="${message:nom}" required="true" autofocus="true"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label for="saisiePrénom" class="col-sm-2 control-label">Prénom</label>
+        <label for="saisiePrénom" class="col-sm-2 control-label">${message:prénom}</label>
 
         <div class="col-sm-6">
-            <input type="text" class="form-control" id="saisiePrénom" placeholder="Prénom" required="true"/>
+            <input type="text" class="form-control" id="saisiePrénom" placeholder="${message:prénom}" required="true"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label for="saisieVille" class="col-sm-2 control-label">Ville</label>
+        <label for="saisieVille" class="col-sm-2 control-label">${message:ville}</label>
 
         <div class="col-sm-6">
-            <input type="text" class="form-control" id="saisieVille" placeholder="Ville" required="true"/>
+            <input type="text" class="form-control" id="saisieVille" placeholder="${message:ville}" required="true"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label for="saisieMail" class="col-sm-2 control-label">Email</label>
+        <label for="saisieMail" class="col-sm-2 control-label">${message:email}</label>
 
         <div class="col-sm-6">
-            <input type="email" class="form-control" id="saisieMail" placeholder="email" required="true"/>
+            <input type="email" class="form-control" id="saisieMail" placeholder="${message:email}" required="true"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label for="saisieMdP" class="col-sm-2 control-label">Mot de passe</label>
+        <label for="saisieMdP" class="col-sm-2 control-label">${message:motDePasse}</label>
 
         <div class="col-sm-6">
-            <input type="password" class="form-control" id="saisieMdP" placeholder="Mot de passe" required="true"/>
+            <input type="password" class="form-control" id="saisieMdP" placeholder="${message:motDePasse}" required="true"/>
         </div>
     </div>
 
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-danger">Créer votre compte</button>
+            <button type="submit" class="btn btn-danger">${message:creerCompte}</button>
         </div>
     </div>
 </form>

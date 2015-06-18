@@ -1,0 +1,11 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+
+<t:if test="${conf.affichée}">
+    <div class="col-sm-${conf.taille}">
+        <div class="contenu ${conf.style}">
+            <t:pagelink page="${conf.débranchement}">${conf.titre} <br/><i class="${conf.icone}"></i> </t:pagelink>
+        </div>
+    </div>
+</t:if>
+
+</html>

@@ -3,34 +3,32 @@
       xmlns:p="tapestry:parameter">
 
 <div class="page-header">
-    <h1>Connexion au système</h1>
+    <h1>${message:titreConnexion}</h1>
 </div>
-<p>Pour profiter de toutes les fonctionnalités offertes par notre site veuillez vous connecter.
-    Une fois connectés vous aurez accès à de nouvelles sections comme notre catalogue.
-    Bonne navigation sur notre site.</p>
+<p>${message:desciptifConexion}</p>
 
-<div class="alert alert-danger" role="alert">Email et/ou mot de passe incorrecte!</div>
+<div class="alert alert-danger" role="alert">${message:alerteConnexion}</div>
 
 <form class="form-horizontal">
     <div class="form-group">
-        <label for="saisieMail" class="col-sm-2 control-label">Email</label>
+        <label for="saisieMail" class="col-sm-2 control-label">${message:email}</label>
 
         <div class="col-sm-6">
-            <input type="email" class="form-control" id="saisieMail" placeholder="email" required="true" autofocus="true"/>
+            <input type="email" class="form-control" id="saisieMail" placeholder="${message:email}" required="true" autofocus="true"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label for="saisieMdP" class="col-sm-2 control-label">Mot de passe</label>
+        <label for="saisieMdP" class="col-sm-2 control-label">${message:motDePasse}</label>
 
         <div class="col-sm-6">
-            <input type="password" class="form-control" id="saisieMdP" placeholder="Mot de passe" required="true"/>
+            <input type="password" class="form-control" id="saisieMdP" placeholder="${message:motDePasse}" required="true"/>
         </div>
     </div>
 
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">Se connecter</button>
+            <button type="submit" class="btn btn-primary">${message:seConnecter}</button>
         </div>
     </div>
 </form>
@@ -38,17 +36,13 @@
 <hr class="major"/>
 
 <div class="row">
-    <p>Vos données seront traitées, analysées, torturées afin de mieux vous connaître pour mieux vous servir...
-        <br/>
-        et aussi parce qu'on veux que vous dépensiez vos brouzoufs chez nous!
-    </p>
+    <p><t:outputraw value="message:décharge"/></p>
 </div>
 
 <div class="row">
-    <p>Vous n'avez pas de compte ? Pas de soucis ! Venez nous rejoindre ! Vous ne savez pas à quoi vous vous engagez
-        mais ce n'est pas grave ! <br/>
-        <a class="btn btn-danger" href="inscription.html"><i class="fa fa-pencil-square-o"></i> Créer votre
-            compte</a>
+    <p>${message:invitInscription}
+        <br/>
+        <t:pagelink class="btn btn-danger" page="inscription"><i class="fa fa-pencil-square-o"></i> ${message:creerCompte}</t:pagelink>
     </p>
 </div>
 
