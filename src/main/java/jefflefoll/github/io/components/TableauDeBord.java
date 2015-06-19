@@ -1,7 +1,8 @@
 package jefflefoll.github.io.components;
 
-import jefflefoll.github.io.données.Tuiles.ConfTuile;
-import jefflefoll.github.io.services.TableauDeBord.FabriqueDeTableauDeBord;
+import jefflefoll.github.io.données.tuiles.ConfTuile;
+import jefflefoll.github.io.services.tableauDeBord.FabriqueDeTableauDeBord;
+import org.apache.tapestry5.annotations.Parameter;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.ioc.annotations.Inject;
@@ -11,9 +12,7 @@ import java.util.List;
 
 public class TableauDeBord {
 
-    @Inject
-    FabriqueDeTableauDeBord usineDeTuiles;
-
+    @Parameter(required = true)
     @Property
     private List<List<ConfTuile>> ensembleDeLignes;
 
@@ -22,9 +21,4 @@ public class TableauDeBord {
 
     @Property
     private ConfTuile confTuile;
-
-    @SetupRender
-    public void setupRender() {
-        ensembleDeLignes = usineDeTuiles.fabriquerTabelauDeBord();
-    }
 }

@@ -1,4 +1,4 @@
-package jefflefoll.github.io.données.Tuiles;
+package jefflefoll.github.io.données.tuiles;
 
 import jefflefoll.github.io.pages.Contact;
 

@@ -8,6 +8,6 @@
     <t:outputraw t:value="message:descriptif"/>
 </p>
 
-<t:tableauDeBord />
+<t:tableauDeBord t:ensembleDeLignes="ensembleDeLignes" />
 
 </html>

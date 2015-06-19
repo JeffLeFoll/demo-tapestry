@@ -1,9 +1,9 @@
-package jefflefoll.github.io.services.TableauDeBord;
+package jefflefoll.github.io.services.tableauDeBord;
 
 import com.google.common.collect.Lists;
-import jefflefoll.github.io.données.Tuiles.ConfTuile;
-import jefflefoll.github.io.données.Tuiles.ConfTuileCatalogue;
-import jefflefoll.github.io.données.Tuiles.ConfTuileMonCompte;
+import jefflefoll.github.io.données.tuiles.ConfTuile;
+import jefflefoll.github.io.données.tuiles.ConfTuileCatalogue;
+import jefflefoll.github.io.données.tuiles.ConfTuileMonCompte;
 import org.apache.tapestry5.ioc.annotations.Inject;
 
 import java.util.List;

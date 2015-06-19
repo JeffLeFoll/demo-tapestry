@@ -1,9 +1,7 @@
-package jefflefoll.github.io.services.TableauDeBord;
+package jefflefoll.github.io.services.tableauDeBord;
 
-import com.google.common.collect.Lists;
-import jefflefoll.github.io.données.Tuiles.ConfTuile;
+import jefflefoll.github.io.données.tuiles.ConfTuile;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface FabriqueDeLigneDeTableauDeBord {

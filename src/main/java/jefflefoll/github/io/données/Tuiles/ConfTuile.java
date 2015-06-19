@@ -1,4 +1,4 @@
-package jefflefoll.github.io.données.Tuiles;
+package jefflefoll.github.io.données.tuiles;
 
 import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;

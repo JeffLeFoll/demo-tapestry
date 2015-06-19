@@ -3,7 +3,7 @@
       xmlns:p="tapestry:parameter">
 
 <div class="page-header">
-    <h1>${mesage:titreInscription}</h1>
+    <h1>${message:titreInscription}</h1>
 </div>
 
 <form class="form-horizontal">
