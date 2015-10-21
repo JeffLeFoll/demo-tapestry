@@ -1,7 +1,7 @@
 # Demo-Tapestry
 Petit projet pour démontrer le framework [Apache Tapestry](http://tapestry.apache.org/index.html).
 
-La maquette CSS / HTML est réalisée avec le [framework Skel](http://getskel.com/) (skel Baseline).
+La maquette CSS / HTML est réalisée avec [Bootstrap](http://getbootstrap.com/).
 Le projet Tapestry a été initialisé avec l'archetype Maven "Tapestry 5 Quickstart Project".
 
 Le projet fonctionne avec Gradle, taper 'gradlew tasks' dans une fenêtre de commande pour voir les tâches disponibles.
