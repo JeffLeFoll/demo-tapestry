@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar build/libs/jetty-runner.jar --port $PORT build/
+web: java $JAVA_OPTS -jar build/libs/jetty-runner.jar --port 8080 build/
