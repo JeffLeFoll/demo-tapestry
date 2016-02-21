@@ -18,8 +18,12 @@ repositories {
     maven { url 'https://repository.apache.org/content/groups/staging' }
 }
 
-dependencies {
 
+configurations {
+  runtimeOnly
+}
+
+dependencies {
     compile 'com.google.guava:guava:18.0'
     compile 'org.apache.tapestry:tapestry-core:5.3.8'
     compile 'org.apache.tapestry:tapestry-yuicompressor:5.3.8'
@@ -32,6 +36,11 @@ dependencies {
 	testCompile('junit:junit:4.12') {
       transitive = false
     }
+    
+    // to run our App on Heroku
+    runtimeOnly "org.mortbay.jetty:jetty-runner:8.1.1.v20120215"
+    // monitoring on Heroku
+    runtimeOnly "com.newrelic.agent.java:newrelic-agent:2.18.0"
 	
     //provided 'javax.servlet:servlet-api:2.5'
 }
@@ -43,3 +52,11 @@ tasks.withType(JavaCompile) {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
+task copyToLib(type: Copy) {
+    into "$buildDir/lib"
+    from(configurations.compile)
+}
+  
+task stage(dependsOn: ["clean", "war", "copyToLib"])
+  
