@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar build/libs/jetty-runner.jar --port 8080 build/
+web: java -jar -Dfile.encoding=UTF-8 build/libs/jetty-runner.jar build/libs/*.war
