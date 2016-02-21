@@ -1,7 +1,7 @@
 package jefflefoll.github.io.components;
 
 import jefflefoll.github.io.données.tuiles.ConfTuile;
-import jefflefoll.github.io.services.tableauDeBord.FabriqueDeTableauDeBord;
+import jefflefoll.github.io.services.tableaudebord.FabriqueDeTableauDeBord;
 import org.apache.tapestry5.annotations.Parameter;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.annotations.SetupRender;

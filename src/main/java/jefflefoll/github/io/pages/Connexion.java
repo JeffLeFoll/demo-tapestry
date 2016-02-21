@@ -19,8 +19,7 @@ public class Connexion {
     @Property
     @Persist(PersistenceConstants.FLASH)
     private String saisieMdP;
-
-
+    
     public Object onSuccess() {
         return index;
     }

@@ -2,7 +2,7 @@ package jefflefoll.github.io.pages;
 
 import jefflefoll.github.io.données.annotations.AccèsPublic;
 import jefflefoll.github.io.données.tuiles.ConfTuile;
-import jefflefoll.github.io.services.tableauDeBord.FabriqueDeTableauDeBord;
+import jefflefoll.github.io.services.tableaudebord.FabriqueDeTableauDeBord;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.ioc.annotations.Inject;

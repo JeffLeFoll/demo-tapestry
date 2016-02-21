@@ -1,4 +1,4 @@
-package jefflefoll.github.io.services.tableauDeBord;
+package jefflefoll.github.io.services.tableaudebord;
 
 import jefflefoll.github.io.données.tuiles.ConfTuile;
 

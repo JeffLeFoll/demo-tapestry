@@ -5,6 +5,7 @@ import jefflefoll.github.io.données.constantes.ConstantesSessionAttribute;
 import jefflefoll.github.io.services.authentification.ServiceAuthentification;
 import org.apache.tapestry5.Link;
 import org.apache.tapestry5.annotations.SessionAttribute;
+import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.runtime.Component;
 import org.apache.tapestry5.services.*;
 
