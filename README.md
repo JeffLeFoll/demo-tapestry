@@ -6,6 +6,12 @@ Le projet Tapestry a été initialisé avec l'archetype Maven "Tapestry 5 Quicks
 
 Le projet fonctionne avec Gradle, taper 'gradlew tasks' dans une fenêtre de commande pour voir les tâches disponibles.
 
+# Utilisation
+La maquette boostrap est visible [ici](http://jeff.lefoll.info/demo-tapestry/).
+L'application Tapestry est déployée sur un serveur Jetty dans une instance Heroku [ici](http://infinite-mesa-54519.herokuapp.com/).
+
+Les comptes pour s'autentifier sur l'application sont ***/*** et ***/***.
+
 #License
 Copyright (C) 2015 Jean-François Le Foll
 
