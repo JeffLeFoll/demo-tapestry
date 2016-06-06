@@ -15,10 +15,10 @@ import org.apache.tapestry5.services.MarkupRendererFilter;
 
 public class AppModule {
 
-    @Contribute(MarkupRenderer.class)
+    /* @Contribute(MarkupRenderer.class)
     public static void deactiveDefaultCSS(OrderedConfiguration<MarkupRendererFilter> configuration) {
         configuration.override("InjectDefaultStylesheet", null);
-    }
+    } */
 
     public static void bind(ServiceBinder binder) {
         binder.bind(FabriqueDeLaPremièreLigne.class);
